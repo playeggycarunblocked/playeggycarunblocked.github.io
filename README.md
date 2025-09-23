@@ -154,3 +154,5 @@ If you encounter any issues or have questions:
 ---
 
 **Enjoy playing Eggy Car unblocked! 🥚🚗**
+
+*Last updated: September 23, 2025*
