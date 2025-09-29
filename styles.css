@@ -10,7 +10,7 @@ body {
     sans-serif;
   line-height: 1.6;
   color: #111;
-  background: linear-gradient(180deg, #f7f9fc 0%, #eef2f7 100%);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   min-height: 100vh;
 }
 
@@ -316,6 +316,12 @@ body {
 }
 
 /* Content Sections */
+.content-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 1.25rem;
+  color: #fff;
+}
 .intro-text {
   text-align: center;
   margin-bottom: 3rem;
@@ -568,7 +574,6 @@ body {
 /* Blog Styles */
 .blog-hero {
   padding: 120px 0 80px;
-  background: linear-gradient(135deg, #f1f5ff 0%, #eef4ff 100%);
   color: #111;
   position: relative;
 }
@@ -614,8 +619,7 @@ body {
 
 .blog-content {
   padding: 80px 0;
-  background: linear-gradient(135deg, #fbfcff 0%, #f6f8ff 100%);
-  color: #111;
+  color: #fff;
 }
 
 .blog-article {
@@ -969,19 +973,25 @@ body {
 
 /* More Beedo Games Page Styles */
 .games-table {
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 18px;
   overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   margin: 2rem 0;
+  backdrop-filter: blur(8px);
+}
+
+.games-table .content-section,
+.games-table .content-section * {
+  color: inherit;
 }
 
 .game-row {
   display: grid;
   grid-template-columns: 1fr 1fr 2fr;
   gap: 1rem;
-  padding: 1.5rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .game-row:last-child {
@@ -989,7 +999,7 @@ body {
 }
 
 .game-row.header {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.12);
   font-weight: 600;
   font-size: 1.1rem;
 }
@@ -998,7 +1008,8 @@ body {
   display: flex;
   align-items: center;
   font-size: 1rem;
-  line-height: 1.5;
+  line-height: 1.6;
+  color: #fff;
 }
 
 .game-cell strong {
