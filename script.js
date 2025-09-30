@@ -79,6 +79,7 @@ function checkDomains() {
       "https://eggy-car-online.github.io/js/darkMode.bundle.js",
     "unblocked-games.s3.amazonaws.com":
       "https://unblocked-games.s3.amazonaws.com/favicon.ico",
+    "dumpert.nl": "https://www.dumpert.nl/favicon.ico",
   };
 
   for (const domain in urls) {
