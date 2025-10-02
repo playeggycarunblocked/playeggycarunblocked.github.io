@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://playeggycarunblocked.github.io/sitemap.xml
+
