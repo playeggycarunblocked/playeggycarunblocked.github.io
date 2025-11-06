@@ -301,6 +301,18 @@ body {
   margin-bottom: 2rem;
 }
 
+.game-iframe {
+  display: block;
+  width: 100%;
+  max-width: 960px;
+  height: clamp(360px, 70vh, 720px);
+  margin: 0 auto;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  background: #000;
+}
+
 /* About Section */
 .about-section {
   padding: 80px 0;

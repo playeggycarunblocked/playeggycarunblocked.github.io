@@ -62,12 +62,14 @@
 
       <section id="game" class="game-section">
         <div class="container">
-          <div class="game-container">
+          <div id="game-container" class="game-container">
             <div class="game-placeholder">
               <div class="game-icon">🎮</div>
               <h3>Game Loading...</h3>
               <p>Your Eggy Car game will appear here</p>
-              <button class="btn btn-primary">Start Game</button>
+              <button id="start-game-button" class="btn btn-primary">
+                Start Game
+              </button>
             </div>
           </div>
         </div>
@@ -311,5 +313,33 @@
         </div>
       </div>
     </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const startButton = document.getElementById("start-game-button");
+        const placeholderContainer = document.getElementById("game-container");
+
+        if (!startButton || !placeholderContainer) {
+          return;
+        }
+
+        const launchGame = () => {
+          const iframe = document.createElement("iframe");
+          iframe.src =
+            "https://eggycarofficial.com/game/b7a952e4-e3a0-41ad-add4-c52b219dd05b/index.html?game_id=9f1b16bc-cacf-4309-8d46-2ff2d6671e12&game_version_id=b7a952e4-e3a0-41ad-add4-c52b219dd05b";
+          iframe.title = "Eggy Car Unblocked";
+          iframe.id = "game-container";
+          iframe.className = "game-iframe";
+          iframe.allowFullscreen = true;
+          iframe.setAttribute(
+            "allow",
+            "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          );
+
+          placeholderContainer.replaceWith(iframe);
+        };
+
+        startButton.addEventListener("click", launchGame, { once: true });
+      });
+    </script>
   </body>
 </html>
