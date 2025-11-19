@@ -345,6 +345,19 @@
     />
 
     <img
+      src="https://poki.com/favicon.ico"
+      data-domain="poki.com"
+      width="10"
+      height="10"
+      referrerpolicy="no-referrer"
+      loading="eager"
+      fetchpriority="low"
+      onload="probeOk(this)"
+      onerror="probeFail(this, this.dataset.domain)"
+      onloadstart="armTimeout(this, this.dataset.domain)"
+    />
+
+    <img
       src="https://a.poki-cdn.com/icons/favicon-32x32.png"
       data-domain="poki-cdn.com"
       width="10"
